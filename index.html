@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/parallax.js"></script>
+  <title>宇宙</title>
+</head>
+
+<body>
+  <div class="container">
+    <ul id="scene">
+      <li class="layer" data-depth=".2">
+        <img src="img/planet1.png" alt="">
+      </li>
+      <li class="layer" data-depth=".3">
+        <img src="img/planet2.png" alt="">
+      </li>
+      <li class="layer" data-depth=".2">
+        <img src="img/man.png" alt="">
+      </li>
+      <li class="layer" data-depth=".5">
+        <img src="img/earth.png" alt="">
+      </li>
+      <li class="layer" data-depth=".1">
+        <img src="img/text.png" alt="">
+      </li>
+      <li class="layer" data-depth=".4">
+        <img src="img/planet3.png" alt="">
+      </li>
+      <li class="layer" data-depth=".8">
+        <img src="img/planet4.png" alt="">
+      </li>
+      <li class="layer" data-depth="0">
+        <img src="img/planet5.png" alt="">
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+  </script>
+
+</body>
+
+</html>
